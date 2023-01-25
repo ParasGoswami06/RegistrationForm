@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    font-family: gilroy;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top,rgba(62, 62, 226, 0.726),rgba(124, 123, 123, 0.337),rgba(62, 62, 226, 0.726));
+    align-items: center;
+    justify-content: center;
+    justify-content:space-around;
+}
+a{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+}
+a h2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+a:hover{
+    background-color: aquamarine;
+    animation-name: ahover;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-duration: 0.7s;
+}
+@keyframes ahover {
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: aquamarine;
+    }
+    
+}
+#heading{
+    position: absolute;
+    top: 5%;
+    font-size: 3vw;
+    display: flex;
+}
+#heading h1{
+    color: black;
+    animation: head 6s ease-in-out infinite forwards ;
+    animation-direction: alternate-reverse;
+}
+@keyframes head {
+    0%{
+        color: black;
+    }
+    100%{
+        color: rgb(3, 1, 44);
+    }
+    
+}
